@@ -154,7 +154,7 @@
                     <div class="row">
                         <?php
                         include 'scripts/connections.php';
-                        $pageID = "CSCI 1800/CSCI 1801";
+                        $pageID = "CSCI 1800/1801";
                         $conn = connect();
                         getCourse($conn, $pageID);
                         closeConn($conn);
