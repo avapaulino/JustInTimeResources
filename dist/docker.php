@@ -160,9 +160,10 @@
           <div class="text-center">
             <img src="./assets/img/Banner - CS Building.png" style="width:100%;height:auto;" class="img-fluid" alt="Responsive image">
           </div>
-          <h1 class="mt-4" style="font-family:Verdana ">Docker Tutorials</h1>
+          <h1 class="mt-4" style="font-family:Verdana ">Just In Time Resources</h1>
           <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item active">Home</li>
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item active">Docker Tutorials</li>
           </ol>
 
           <div class="accordion" id="accordionExample">
