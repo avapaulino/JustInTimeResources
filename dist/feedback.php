@@ -2,10 +2,10 @@
 <html lang="en">
 
 <?php
-    $pageID = basename(__FILE__);
-    include 'scripts/connections.php';
-    $conn = connect();
-    $courseID = $_POST['courseID'];
+$pageID = basename(__FILE__);
+include 'scripts/connections.php';
+$conn = connect();
+$courseID = $_POST['courseID'];
 ?>
 
 <head>
@@ -39,6 +39,11 @@
                             Home
                         </a>
                         <div class="sb-sidenav-menu-heading">Courses</div>
+
+                        <a class="nav-link" href="allcourses.php">
+                            <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
+                            All Courses
+                        </a>
 
                         <a class="nav-link" href="csci1105.php">
                             <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
@@ -88,6 +93,10 @@
                         <a class="nav-link" href="csci2112.php">
                             <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
                             CSCI 2112
+                        </a>
+                        <a class="nav-link" href="csci2115.php">
+                            <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
+                            CSCI 2115
                         </a>
 
                         <a class="nav-link" href="csci2122.php">
@@ -151,6 +160,9 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid">
+                    <div class="text-center">
+                        <img src="./assets/img/Banner - CS Building.png" style="width:100%;height:auto;" class="img-fluid" alt="Responsive image">
+                    </div>
                     <h1 class="mt-4" style="font-family:Verdana ">Just In Time Resources</h1>
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item">Home</li>
@@ -168,11 +180,11 @@
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Your Website 2020</div>
+                        <div class="text-muted">&copy; Just In Time Resources</div>
                         <div>
-                            <a href="#">Privacy Policy</a>
+                            <a href="mailto:csed@dal.ca">csed@dal.ca</a>
                             &middot;
-                            <a href="#">Terms &amp; Conditions</a>
+                            #WeAreAllCS
                         </div>
                     </div>
                 </div>

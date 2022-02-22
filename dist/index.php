@@ -2,15 +2,15 @@
 <html lang="en">
 
 <?php
-    include 'scripts/connections.php';
-    $conn = connect();
-    if (isset($_POST['submit'])){
-        $dalCourse = $_POST["dalCourse"];
-        $suggCourse = $_POST["suggCourse"];
-        $comment = $_POST["comment"];
+include 'scripts/connections.php';
+$conn = connect();
+if (isset($_POST['submit'])) {
+    $dalCourse = $_POST["dalCourse"];
+    $suggCourse = $_POST["suggCourse"];
+    $comment = $_POST["comment"];
 
-        submitForm($conn, $dalCourse, $suggCourse, $comment);
-    }
+    submitForm($conn, $dalCourse, $suggCourse, $comment);
+}
 ?>
 
 <head>
@@ -45,9 +45,14 @@
                         </a>
                         <div class="sb-sidenav-menu-heading">Courses</div>
 
+                        <a class="nav-link" href="allcourses.php">
+                            <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
+                            All Courses
+                        </a>
+
                         <a class="nav-link" href="csci1105.php">
                             <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
-                            CSCI 1105
+                            CSCI 1105 & 1110
                         </a>
 
                         <a class="nav-link" href="csci1107.php">
@@ -58,11 +63,6 @@
                         <a class="nav-link" href="csci1108.php">
                             <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
                             CSCI 1108
-                        </a>
-
-                        <a class="nav-link" href="csci1110.php">
-                            <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
-                            CSCI 1110
                         </a>
 
                         <a class="nav-link" href="csci1120.php">
@@ -94,7 +94,10 @@
                             <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
                             CSCI 2112
                         </a>
-
+                        <a class="nav-link" href="csci2115.php">
+                            <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
+                            CSCI 2115
+                        </a>
                         <a class="nav-link" href="csci2122.php">
                             <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
                             CSCI 2122
@@ -156,6 +159,9 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid">
+                    <div class="text-center">
+                        <img src="./assets/img/Banner - CS Building.png" style="width:100%;height:auto;" class="img-fluid" alt="Responsive image">
+                    </div>
                     <h1 class="mt-4" style="font-family:Verdana ">Just In Time Resources</h1>
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item active">Home</li>
@@ -163,6 +169,7 @@
                     <div class="row" style="padding-left: 2%;padding-right: 2%;">
                         <p>LinkedIn Learning, formally Lynda, is a website that offers different video courses taught by industry experts regarding software, creative, and business skills. It is a subsidiary of LinkedIn.</p>
                         <p>The sidebar on the left includes the CS courses which you can select to view a list of related LinkedIn Learning resources.</p>
+                        <p><strong>All the resources are free (unless indicated)</strong>. You only need to create a Halifax Public Libraries account to access the LinkedIn Learning resources.</p>
                         <p>Below are tutorials on how to create an account and log in with the Halifax Public Libraries, and how to access LinkedIn Learning through Halifax Public Libraries. </p>
                         <p>NOTE: Students can register even if they are currently not in NS. When entering your address details, use the address of the faculty they are studying with or use the Dalhousie address. You can then select the box to declare that you are a Nova Scotia Resident.</p>
                         <p><strong>IMPORTANT: The library ID for LinkedInLearning is halifaxca</strong></p>
@@ -200,9 +207,10 @@
                     </div>
                     <div class="card mt-5 col-sm-8 mx-auto">
                         <form id="courseForm" onsubmit="return alert('Thank you! The form has been submitted');" method="POST">
-                            <h3 class="text-center mt-2">Course Suggestions</h3>
+                            <h3 class="text-center mt-2">Do you have any suggestions for courses? Please add them below</h3>
+                            <br>
                             <div class="form-group ml-2 mr-2">
-                                <label>Dalhousie Course</label>
+                                <label>Dalhousie Course Related To The Resource</label>
                                 <input type="text" class="form-control" name="dalCourse" placeholder="CSCI Course" required>
                             </div>
                             <div class="form-group ml-2 mr-2">
@@ -222,11 +230,16 @@
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Your Website 2020</div>
+                        <div class="text-muted">&copy; Just In Time Resources</div>
+                        <div class="counter">
+                            <!-- hitwebcounter Code START -->
+                            <a href="https://www.hitwebcounter.com" target="_blank">
+                                <img src="https://hitwebcounter.com/counter/counter.php?page=7804604&style=0008&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter" border="0" /></a>
+                        </div>
                         <div>
-                            <a href="#">Privacy Policy</a>
+                            <a href="mailto:csed@dal.ca">csed@dal.ca</a>
                             &middot;
-                            <a href="#">Terms &amp; Conditions</a>
+                            #WeAreAllCS
                         </div>
                     </div>
                 </div>

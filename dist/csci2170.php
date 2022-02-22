@@ -23,12 +23,12 @@ $courseName = $subj . " " . $code;
     <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/svg+xml" href="./assets/img/journals.svg">
-     
+
 </head>
 
 <body class="sb-nav-fixed">
 
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <a class="navbar-brand" href=" index.php" style="font-family:Verdana "> JUST IN TIME</a>
         <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
     </nav>
@@ -44,9 +44,14 @@ $courseName = $subj . " " . $code;
                         </a>
                         <div class="sb-sidenav-menu-heading">Courses</div>
 
+                        <a class="nav-link" href="allcourses.php">
+                            <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
+                            All Courses
+                        </a>
+
                         <a class="nav-link" href="csci1105.php">
                             <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
-                            CSCI 1105
+                            CSCI 1105 & 1110
                         </a>
 
                         <a class="nav-link" href="csci1107.php">
@@ -59,10 +64,7 @@ $courseName = $subj . " " . $code;
                             CSCI 1108
                         </a>
 
-                        <a class="nav-link" href="csci1110.php">
-                            <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
-                            CSCI 1110
-                        </a>
+
 
                         <a class="nav-link" href="csci1120.php">
                             <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
@@ -93,7 +95,10 @@ $courseName = $subj . " " . $code;
                             <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
                             CSCI 2112
                         </a>
-
+                        <a class="nav-link" href="csci2115.php">
+                            <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
+                            CSCI 2115
+                        </a>
                         <a class="nav-link" href="csci2122.php">
                             <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
                             CSCI 2122
@@ -155,15 +160,18 @@ $courseName = $subj . " " . $code;
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid">
-                    <h1 class="mt-4" style="font-family:Verdana " style="font-family:Verdana"><?php echo $subj . " " . $code . " - " . $course; ?></h1>
+                    <div class="text-center">
+                        <img src="./assets/img/Banner - CS Building.png" style="width:100%;height:auto;" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <h1 class="mt-4" style="font-family:Verdana ">Just In Time Resources</h1>
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item">Home</li>
                         <li class="breadcrumb-item active"><?php echo $code; ?></li>
                     </ol>
                     <div class="row" style="padding-left: 2%;padding-right: 2%;">
-                        <p>LinkedIn Learning, formally Lynda, is a website that offers different video courses taught by industry experts regarding software, creative, and business skills. It is a subsidiary of LinkedIn.</p>
-                        <p></p>
-                        <p><strong>IMPORTANT: The library ID for LinkedInLearning is halifaxca</strong></p>
+                        <?php
+                            description();
+                        ?>
                     </div>
 
                 </div>
@@ -181,11 +189,11 @@ $courseName = $subj . " " . $code;
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Your Website 2020</div>
+                        <div class="text-muted">&copy; Just In Time Resources</div>
                         <div>
-                            <a href="#">Privacy Policy</a>
+                            <a href="mailto:csed@dal.ca">csed@dal.ca</a>
                             &middot;
-                            <a href="#">Terms &amp; Conditions</a>
+                            #WeAreAllCS
                         </div>
                     </div>
                 </div>
