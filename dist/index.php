@@ -153,7 +153,7 @@ if (isset($_POST['submit'])) {
                             Docker Tutorials
                         </a>
 
-                        <a class="nav-link" href="docker.php">
+                        <a class="nav-link" href="gitlab.php">
                             <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
                             GitLab Tutorials
                         </a>
