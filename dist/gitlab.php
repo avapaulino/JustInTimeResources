@@ -179,11 +179,20 @@ $courseName = $subj . " " . $code;
                     </div>
 
                 </div>
-
                 <div class="container-fluid mt-2">
                     <div class="row">
+                        <div class='col-lg-3 col-md-6 col-sm-6 mb-2'>
+                            <a style='color: black; text-decoration: none;' target="_blank" href="https://docs.gitlab.com/">
+                                <div class='card card-block'>
+                                    <img src='assets/img/gitlab-2.png' alt='gitlab-2.png'>
+                                    <h5 class='card-title ml-2 mr-2 mt-3 mb-3'>GitLab Website Documentation</h5>
+                                    <p class='card-text ml-2 mr-2 scrollable'>GitLab documentation and support from the GitLab website.</p>
+                                    <div class='card-footer text-muted'></div>
+                                </div>
+                            </a>
+                        </div>
                         <?php
-                        getCourse($conn, $courseName);
+                        getCourse($conn, $course);
                         closeConn($conn);
                         ?>
                     </div>
