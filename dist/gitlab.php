@@ -157,11 +157,6 @@ $courseName = $subj . " " . $code;
                             GitLab Tutorials
                         </a>
 
-                        <a class="nav-link" href="docker.php">
-                            <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
-                            GitLab Tutorials
-                        </a>
-
                     </div>
                 </div>
             </nav>
