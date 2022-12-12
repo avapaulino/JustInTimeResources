@@ -147,12 +147,12 @@ $courseName = $subj . " " . $code;
                             CSCI 3172
                         </a>
 
-                        <a class="nav-link" href="csci3172.php">
+                        <a class="nav-link" href="csci4144.php">
                             <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
                             CSCI 4144
                         </a>
 
-                        <a class="nav-link" href="csci3172.php">
+                        <a class="nav-link" href="csci4174.php">
                             <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
                             CSCI 4174
                         </a>
