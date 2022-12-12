@@ -149,6 +149,16 @@ $courseID = $_POST['courseID'];
                             CSCI 3172
                         </a>
 
+                        <a class="nav-link" href="csci3172.php">
+                            <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
+                            CSCI 4144
+                        </a>
+
+                        <a class="nav-link" href="csci3172.php">
+                            <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
+                            CSCI 4174
+                        </a>
+                        
                         <a class="nav-link" href="docker.php">
                             <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
                             Docker Tutorials
